@@ -2,35 +2,35 @@
 <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
 @section('content')
 
-    <div class="container ">
+    <div class="container  ">
 
-    <div class="col-lg-6 col-sm-6">
+    <div class="col-lg-12 col-sm-12">
         <div class="card hovercard">
             <div class="card-background">
-                <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100">
+                <img class="card-bkimg" alt="" src="http://lorempixel.com/850/280/people/7/">
                 <!-- http://lorempixel.com/850/280/people/9/ -->
             </div>
             <div class="useravatar">
-                <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                <img alt="" src="http://lorempixel.com/100/100/people/7/">
             </div>
-            <div class="card-info"> <span class="card-title">Pamela Anderson</span>
+            <div class="card-info"> <span class="card-title">{{$user->name}}</span>
 
             </div>
         </div>
         <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
             <div class="btn-group" role="group">
-                <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <div class="hidden-xs">Stars</div>
+                <button type="button" id="desc" class="btn btn-primary active" href="#tab1" data-toggle="tab"><i class="fas fa-user"></i>
+                    <div class="hidden-xs">Description</div>
                 </button>
             </div>
             <div class="btn-group" role="group">
-                <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                    <div class="hidden-xs">Favorites</div>
+                <button type="button" id="top" class="btn btn-default" href="#tab2" data-toggle="tab"><i class="fas fa-music"></i>
+                    <div class="hidden-xs">Top Song</div>
                 </button>
             </div>
             <div class="btn-group" role="group">
-                <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <div class="hidden-xs">Following</div>
+                <button type="button" id="play" class="btn btn-default" href="#tab3" data-toggle="tab"><i class="fas fa-play"></i>
+                    <div class="hidden-xs">Playlists</div>
                 </button>
             </div>
         </div>
