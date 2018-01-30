@@ -7,11 +7,12 @@
     <div class="col-lg-12 col-sm-12">
         <div class="card hovercard">
             <div class="card-background">
-                <img class="card-bkimg" alt="" src="http://lorempixel.com/850/280/people/7/">
+                <img class="card-bkimg" alt="" src="{{$info->avatar}}">
                 <!-- http://lorempixel.com/850/280/people/9/ -->
             </div>
             <div class="useravatar">
-                <img alt="" src="http://lorempixel.com/100/100/people/7/">
+
+                <img alt="" src="{{$info->avatar}}">
             </div>
             <div class="card-info"> <span class="card-title">{{$user->name}}</span>
 

@@ -79,3 +79,11 @@
 .btn-pref .btn {
     -webkit-border-radius: 0 !important;
 }
+
+.btn-group > button>div  {
+
+    padding-top: 0.5em;
+}
+ .btn-group > button{
+     padding: 1em 0;
+ }
