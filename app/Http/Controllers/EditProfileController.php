@@ -6,20 +6,19 @@ use App\UserInfo;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
-class EditProfileController extends Controller
-{
+class EditProfileController extends Controller {
 	/**
 	 * Create a new controller instance.
 	 *
 	 * @return void
 	 */
-	public function __construct()
-	{
+	public function __construct() {
 		$this->middleware('auth');
 	}
 
-	public function update()
-	{
+	public function update(Request $request) {
+
+		//TODO: MODIFICAR LA TABLA CON $REQUEST[NAME]
 
 	}
 
@@ -28,8 +27,8 @@ class EditProfileController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show()
-	{
+	public function show() {
 		return view('editProfile');
 	}
+
 }

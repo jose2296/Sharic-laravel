@@ -8,7 +8,7 @@
                     <div class="panel-heading">Edit profile</div>
 
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" action="/profile">
+                        <form class="form-horizontal" method="POST" action="">
                             {{ csrf_field() }}
 
                                 <label for="email" class="col-md-4 control-label">Edit Top Songs</label>

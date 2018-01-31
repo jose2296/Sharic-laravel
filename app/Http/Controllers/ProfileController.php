@@ -22,8 +22,8 @@ class ProfileController extends Controller
 	{
 		$user=Auth::user();
 		$info=UserInfo::all()->where('user_id','=',$user->id);
+//dd($info[1]);
 
-
-		return view('profile',['user'=>$user,'info'=>$info[0]]);
+		return view('profile',['user'=>$user,'info'=>$info[1]]);
 	}
 }

@@ -14,41 +14,31 @@
 
                 <img alt="" src="{{$info->avatar}}">
             </div>
-            <div class="card-info"> <span class="card-title">{{$user->name}}</span>
+            <div class="card-info"> <span class="">{{$user->name}}</span>
 
             </div>
         </div>
-        <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-                <button type="button" id="desc" class="btn btn-primary active" href="#tab1" data-toggle="tab"><i class="fas fa-user"></i>
-                    <div class="hidden-xs">Description</div>
-                </button>
-            </div>
-            <div class="btn-group" role="group">
-                <button type="button" id="top" class="btn btn-default" href="#tab2" data-toggle="tab"><i class="fas fa-music"></i>
-                    <div class="hidden-xs">Top Song</div>
-                </button>
-            </div>
-            <div class="btn-group" role="group">
-                <button type="button" id="play" class="btn btn-default" href="#tab3" data-toggle="tab"><i class="fas fa-play"></i>
-                    <div class="hidden-xs">Playlists</div>
-                </button>
-            </div>
+
+
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#topsongs" role="tab">Top Songs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#playlist" role="tab">Playlists</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="description" role="tabpanel">{{$info->info}}</div>
+            <div class="tab-pane fade in " id="topsongs" role="tabpanel">Top Songs 2</div>
+            <div class="tab-pane fade in " id="playlist" role="tabpanel">Playlist 3</div>
         </div>
 
-        <div class="well">
-            <div class="tab-content">
-                <div class="tab-pane fade in active" id="tab1">
-                    <h3>This is tab 1</h3>
-                </div>
-                <div class="tab-pane fade in" id="tab2">
-                    <h3>This is tab 2</h3>
-                </div>
-                <div class="tab-pane fade in" id="tab3">
-                    <h3>This is tab 3</h3>
-                </div>
-            </div>
-        </div>
 
     </div>
     </div>
